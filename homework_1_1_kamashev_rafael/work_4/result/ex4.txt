@@ -1,0 +1,32 @@
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> mkdir abc xyz
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> touch abc/file.txt
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> link abc/file.txt xyz/file.txt
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> ls -lia abc
+итого 8
+844574 drwxrwxr-x 2 wizzzet wizzzet 4096 сен 10 14:06 .
+844573 drwxrwxr-x 4 wizzzet wizzzet 4096 сен 10 14:06 ..
+796355 -rw-rw-r-- 2 wizzzet wizzzet    0 сен 10 14:06 file.txt
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> ls -lia xyz
+итого 8
+844575 drwxrwxr-x 2 wizzzet wizzzet 4096 сен 10 14:06 .
+844573 drwxrwxr-x 4 wizzzet wizzzet 4096 сен 10 14:06 ..
+796355 -rw-rw-r-- 2 wizzzet wizzzet    0 сен 10 14:06 file.txt
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> find . -inum `ls -i abc | grep file.txt | cut -d' ' -f1`
+./abc/file.txt
+./xyz/file.txt
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> find . -inum `ls -i abc | grep file.txt | cut -d' ' -f1` -exec rm -f {} \;
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> ls -a abc
+.  ..
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)> ls -a xyz
+.  ..
+┌─[wizzzet@wizzzet-HP-ProBook-430-G7] - [~/ds/data-science/homework_1_1_kamashev_rafael/work_4] - [Пт сен 10, 14:06]
+└─[$] <git:(master*)>
