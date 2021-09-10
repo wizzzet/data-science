@@ -1,2 +1,3 @@
 # data-science
-My homeworks
+Мои домашние задания на курсе Data Science
+
