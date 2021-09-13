@@ -1,6 +1,8 @@
 # Домашнее задание Камашева Рафаэля 1.2.
 ## Упражнение 1 (ЛАЙТ - версия задания)
 
+https://github.com/wizzzet/data-science/tree/master/homework_1_2_kamashev_rafael_docker
+
 >Установить Docker, вы вести версию докера с помощью команды docker –v
 
 Результат:
